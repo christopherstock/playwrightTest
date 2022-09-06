@@ -44,6 +44,12 @@ Run all tests with debugger support ("Playwright Inspector"):
 npx playwright test --debug
 ```
 
+# Test Code Generator
+Open the Playwright Inspector in Record mode on mayflower.de on with IPhone 11 device preferences:
+```
+npx playwright codegen --device="iPhone 11" mayflower.de
+```
+
 # IDE Plugins
 VS Code (free)
 https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright
