@@ -7,7 +7,7 @@ https://playwright.dev/docs/writing-tests
 
 
 
-# Install Playwright Sceleton
+# Install Node.js Playwright Sceleton
 Enter an empty directory and type:
 ```
 npm init playwright@latest

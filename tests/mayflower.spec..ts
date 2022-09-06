@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe("Mayflower Homepage", () => {
+
     test.beforeEach(async ({ page }) => {
         // open Mayflower homepage
         await page.goto('https://www.mayflower.de/');
