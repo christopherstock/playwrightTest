@@ -1,4 +1,6 @@
 # PlaywrightTest
+![Playwright](img/logo-playwright.png)
+
 First steps with Playwright:<br>
 https://playwright.dev/docs/intro
 
