@@ -1,6 +1,11 @@
 # PlaywrightTest
-First steps with Playwright.<br>
+First steps with Playwright:<br>
 https://playwright.dev/docs/intro
+
+Writing Tests:<br>
+https://playwright.dev/docs/writing-tests
+
+
 
 # Install Playwright Sceleton
 Enter an empty directory and type:
@@ -15,8 +20,9 @@ Performs all tests inside directory `tests`.
 npx playwright test
 ```
 
-# Inaspect Test Report
-Is generated on test run in directory `playwright-report`.
+# View Test Report
+The test report is generated after the test run
+in HTML format in directory `playwright-report`.
 ```
 npx playwright show-report
 ```

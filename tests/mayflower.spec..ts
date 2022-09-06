@@ -1,20 +1,20 @@
 import { test, expect } from '@playwright/test';
 
-test('homepage of Mayflower has expected Title', async ({ page }) => {
-  await page.goto('https://www.mayflower.de/');
+test('Mayflower Homepage - Menu Link "Stellenangebote"', async ({ page }) => {
+    await page.goto('https://www.mayflower.de/');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Agile Teams für moderne Softwareentwicklung - Mayflower GmbH/);
+    // assert title
+    await expect(page).toHaveTitle(/Agile Teams für moderne Softwareentwicklung - Mayflower GmbH/);
 
-  // create a locator
-  // const getStarted = page.locator('text=Get Started');
+    // get menu link 'Stellenangebote'
+    const jobsLink = page.locator('text=Stellenangebote');
 
-  // Expect an attribute "to be strictly equal" to the value.
-  // await expect(getStarted).toHaveAttribute('href', '/docs/intro');
+    // expect href attribute exact value
+    await expect(jobsLink).toHaveAttribute('href', 'https://mayflower.de/karriere/');
 
-  // Click the get started link.
-  // await getStarted.click();
+    // click 'Stellenangebote' link
+    await jobsLink.click();
 
-  // Expects the URL to contain intro.
-  // await expect(page).toHaveURL(/.*intro/);
+    // expect URL to match
+    await expect(page).toHaveURL(/.*\/karriere/);
 });
