@@ -1,5 +1,6 @@
 .idea
 node_modules/
+test-report-junit.xml
 /test-results/
 /playwright-report/
 /playwright/.cache/

@@ -27,6 +27,13 @@ in HTML format in directory `playwright-report`.
 npx playwright show-report
 ```
 
+# XML or Custom Test Report
+Use different reports in order to create different test reports.
+This generates a JUnit XML in file `test-report-junit.xml`.
+```
+npx playwright test --reporter=junit > test-report-junit.xml
+```
+
 # Run Tests Headed
 Run all tests inside directory `tests` and display browser windows.
 ```
