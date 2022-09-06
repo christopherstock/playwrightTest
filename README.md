@@ -41,3 +41,10 @@ Run all tests with debugger support ("Playwright Inspector"):
 ```
 npx playwright test --debug
 ```
+
+# IDE Plugins
+VS Code (free)
+https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright
+
+IntelliJ (30 day trial)
+https://plugins.jetbrains.com/plugin/18100-maestro
