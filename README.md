@@ -26,3 +26,14 @@ in HTML format in directory `playwright-report`.
 ```
 npx playwright show-report
 ```
+
+# Run Tests Headed
+Run all tests inside directory `tests` and display browser windows.
+```
+npx playwright test --headed
+```
+
+To run all tests only in one specific browser:
+```
+npx playwright test --headed --project=chromium
+```
