@@ -5,8 +5,6 @@ https://playwright.dev/docs/intro
 Writing Tests:<br>
 https://playwright.dev/docs/writing-tests
 
-
-
 # Install Node.js Playwright Sceleton
 Enter an empty directory and type:
 ```
@@ -36,4 +34,10 @@ npx playwright test --headed
 To run all tests only in one specific browser:
 ```
 npx playwright test --headed --project=chromium
+```
+
+# Debug Tests
+Run all tests with debugger support ("Playwright Inspector"):
+```
+npx playwright test --debug
 ```
